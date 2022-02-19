@@ -86,7 +86,7 @@ class Home extends react.Component {
                         <h1><FaCircle style={{ color: '#f2b919', fontSize: '14px', marginRight: '5px' }} />LIVE ONLINE CLASSES</h1>
                         <h2>Learn a Language in less than 3 months</h2>
                         <span>At The Language Network, we help you master a new foreign language of your choice from the comfort of your home.</span>
-                        <div><button type="button" class="btn btn-info text-white" style={{ backgroundColor: '#13bfab', borderRadius: '10px', paddingTop: '16px', paddingRight: '30px', paddingBottom: '16px', paddingLeft: '30px', fontSize: '0.82352941176471rem' }}>Book a free trial</button></div>
+                        <div><button type="button" class="btn btn-info text-white" style={{ backgroundColor: '#13bfab', borderRadius: '10px', paddingTop: '16px', paddingRight: '30px', paddingBottom: '16px', paddingLeft: '30px', fontSize: '0.82352941176471rem' }}>Book a trial</button></div>
                     </div>
                     <div className='Home-container-1-sec-2'>
                         <video controls Autoplay className='Home-container-1-sec-1-video'>

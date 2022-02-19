@@ -16,7 +16,7 @@ export default function Sec1() {
                     </ul>
                 </div>
                 <div className='curr-container-1-img'>
-                    <img src='/images/Curriculum_banner_1.png' alt='img'/>
+                    <img src='\images\Curriculum_banner_1.png' alt='img'/>
                 </div>
             </div>
         </div>
