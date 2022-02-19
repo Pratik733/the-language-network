@@ -7,6 +7,7 @@ import Mandarin from './LangLvl/Mandarin';
 import Japanese from './LangLvl/Japanese';
 import Korean from './LangLvl/Korean';
 import AdultsTable from './AdultsTable'
+import English from './LangLvl/English';
 
 
 function Adults() {
@@ -14,6 +15,9 @@ function Adults() {
     const [lang, setLang] = useState('french')
     const Languages = () => {
         switch (lang) {
+            case 'English':
+                return (<English />)
+                break;
             case 'french':
                 return (<French />)
                 break;
@@ -32,6 +36,7 @@ function Adults() {
             case 'korean':
                 return (<Korean />)
                 break;
+                
             default:
         }
     };
@@ -66,23 +71,26 @@ function Adults() {
             </div>
 
             <div className='w-full flex justify-center'>
+            <a onClick={() => setLang('English')} id={lang === 'English' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
+                    English
+                </a>
                 <a onClick={() => setLang('french')} id={lang === 'french' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
-                    Adults Curriculum
+                    French
                 </a>
                 <a onClick={() => setLang('spanish')} id={lang === 'spanish' ? 'btnP' : ''} class="buttons bg-white  py-2.5 px-4 rounded-lg shadow mx-3">
-                    Adolescents Curriculum
+                    Spanish
                 </a>
                 <a onClick={() => setLang('german')} id={lang === 'german' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
-                    Kids Curriculum
+                    German
                 </a>
                 <a onClick={() => setLang('mandarin')} id={lang === 'mandarin' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
-                    Kids Curriculum
+                    Mandarin
                 </a>
                 <a onClick={() => setLang('japanese')} id={lang === 'japanese' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
-                    Kids Curriculum
+                    Japanese
                 </a>
                 <a onClick={() => setLang('korean')} id={lang === 'korean' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
-                    Kids Curriculum
+                    Korean
                 </a>
             </div>
             <div className='flex justify-center'>
