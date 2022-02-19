@@ -96,16 +96,16 @@ export default function Footer() {
                                         <h3>Subscribe</h3>
                                     </div>
                                     <ul>
-                                        <li><a href="#">FAQs</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">Affiliate Program</a></li>
+                                        <li><a href="FAQs">FAQs</a></li>
+                                        <li><a href="Contact">Contact</a></li>
+                                        <li><a href="Affiliate Program">Affiliate Program</a></li>
                                     </ul>
                                     <div className="footer-widget-heading">
                                         <h3>More</h3>
                                     </div>
                                     <ul>
-                                        <li><a href="#">Phrasebook</a></li>
-                                        <li><a href="#">Events</a></li>
+                                        <li><a href="Phrasebook">Phrasebook</a></li>
+                                        <li><a href="Events">Events</a></li>
                                     </ul>
                                 </div>
                             </div>
