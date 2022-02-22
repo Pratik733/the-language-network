@@ -8,6 +8,7 @@ import Curriculum from './components/curriculum/Curriculum';
 import KidsCourses from './components/KidsCourses/KidsCourses';
 import IntroCourse from './components/Footer/LangForAdults/IntroCourse';
 import Earth from './components/Earth/Earth';
+import AdultsEnglish from './components/Footer/LangForAdults/English';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           {/* <Route exact path='/curriculum' element={<Curriculum />} /> */}
           <Route exact path='/KidsCourses' element={<KidsCourses />} />
           <Route exact path='/IntoCourses' element={<IntroCourse />} />
+          <Route exact path='/english-course-adults' element={<AdultsEnglish />} />
           <Route exact path='/Earth' element={<Earth />} />
         </Routes>
         <Footer />

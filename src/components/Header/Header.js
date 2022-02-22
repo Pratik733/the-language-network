@@ -5,8 +5,10 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaFacebook } from 'react-icons/fa'
 import react from 'react';
 import { AiOutlineCloseSquare } from 'react-icons/ai';
-import { Link } from 'react-scroll'
-import './Header.css'
+import { Link } from 'react-scroll';
+import './Header.css';
+import { AiOutlineShareAlt } from 'react-icons/ai'
+import { FaLinkedinIn, FaInstagram } from 'react-icons/fa'
 
 
 class Header extends react.Component {
@@ -155,11 +157,15 @@ class Header extends react.Component {
         </Nav>
 
 
-        <div class="menu-button"><i class="zmdi zmdi-share"></i>
-          <a href="www.facebook.com"><FaFacebook class="w-full h-full"></FaFacebook></a>
-          <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
-          <a href="#"><i class="zmdi zmdi-codepen"></i>	</a>
-          <a href="#"><i class="zmdi zmdi-codepen"></i>	</a>
+        <div class="menu-button">
+          <div class="social-menu">
+            <ul>
+              <li><a href="https://github.com/sanketbodke" target="blank"><i class="fab flex items-center h-full"> <FaLinkedinIn className='w-full' /></i></a></li>
+              <li><a href="https://www.instagram.com/imsanketbodke/" target="blank"><i class="fab flex items-center h-full"> <FaInstagram className='w-full' /></i></a></li>
+              <li><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab flex items-center justify-center h-full"> <FaLinkedinIn className='w-8/12' /></i></a></li>
+              <li><a href="https://codepen.io/sanketbodke"><i class="fab flex items-center h-full"> <FaLinkedinIn className='w-full' /></i></a></li>
+            </ul>
+          </div>
         </div>
 
       </>
@@ -274,7 +280,7 @@ const NavMenu = styled.div`
 
 
               &:hover{
-                background - color: #a3ede3;
+                background-color: #a3ede3;
               span{
                 color: #707070;        
               }
@@ -282,14 +288,14 @@ const NavMenu = styled.div`
 
 
               span{
-                padding - left: 1rem;
+                padding-left: 1rem;
               font-size: 14px;
               font-weight: 500;
               font-family: 'roboto',Sans-serif;
           }
               img{
                 width: 2rem;
-              height: 2rem;
+                height: 2rem;
           }
           }
         }

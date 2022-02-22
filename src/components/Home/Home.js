@@ -128,7 +128,7 @@ class Home extends react.Component {
                     <h1>START YOUR JOURNEY WITH US!</h1>
                     <h2>Select a Foreign Language Course</h2>
                     <div className='Home-container-2-imgs'>
-                        <a><img className='Home-container-2-img' alt='img' src='/images/adults-english@300x.png' /></a>
+                        <a href='/english-course-adults'><img className='Home-container-2-img' alt='img' src='/images/adults-english@300x.png' /></a>
                         <a><img className='Home-container-2-img' alt='img' src='/images/adults-french@300x.png' /></a>
                         <a><img className='Home-container-2-img' alt='img' src='/images/adults-spanish@300x.png' /></a>
                         <a><img className='Home-container-2-img' alt='img' src='/images/adults-german@300x.png' /></a>
