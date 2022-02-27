@@ -22,7 +22,7 @@ export default function AdultsEnglish() {
                     <img src="/images/TLN_English-elements.png" alt="img" />
                 </div>
             </div>
-            <div className='w-full text-center text-4xl font-semibold '>How is learning English with TLN unique?</div>
+            <div className='w-full text-center text-4xl font-medium '>How is learning English with TLN unique?</div>
             <div className='w-full lg:px-32 py-18 flex flex-row flex-wrap  justify-evenly'>
                 <div className='h-72 lg:mx-10 my-8 overflow-hidden transition-all duration-500 hover:h-[27rem] w-60 flex flex-col items-center text-center'>
                     <img src="/images/Asset-26@300x.png" alt="alt" className='p-8' />
@@ -55,6 +55,26 @@ export default function AdultsEnglish() {
                     <p className='text-sm text-gray-700'>Learn English courses online with us because we understand how learning works. We organise small batches so that you can practice grammar and vocabulary efficiently with our expert trainers.   </p>
                 </div>
             </div>
+
+            <div className='w-full lg:mt-20 text-center text-4xl font-medium '>How to learn English effectively?</div>
+            {/* <div className='p-28 flex lg:flex-row'>
+                <div className='w-[28rem]'>
+                    <img className='w-full' src="/images/Learn-effectively@300x.png" alt="img" />    
+                </div>     
+                <div className='w-1/2'>
+                    <div >
+                        <div className='left-border'></div>
+                        <h1 className='text-xl font-medium'>Grammar and Vocabulary</h1>
+                        <p>Learn English effectively and efficiently by adhering to our guidelines. There are various tricks and tips you need to follow to learn English. We make sure that our English language courses focus on grammar and vocabulary.</p>
+                    </div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div> */}
+            <div className='w-full lg:mt-20 text-center text-4xl font-medium '>TLN and International Exams</div>
+            <p className='text-center w-full px-60 pt-4 text-sm text-[#54595f]'> We want our students to excel in international exams like TOEFL and IELTS. We teach our students how to learn English in a way that will help them ace these standardised tests. All aspects of the test, including pronunciation, vocabulary, listening part, is being taken care of at TLN. We ensure that once you learn something you won’t forget it.</p>
+
+
             
         </div>
     )

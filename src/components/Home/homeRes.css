@@ -5,6 +5,9 @@
         height: auto;
         background-size: cover;
     }
+    .Home-container-10-overlay{
+        display: none;
+    }
     .Home-container-1-sec-1{
         width: 100%;
     }

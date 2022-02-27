@@ -1,5 +1,4 @@
 import React from 'react';
-import './homeRes.css'
 import { FaCircle } from 'react-icons/fa';
 import { AiFillStar } from 'react-icons/ai';
 import react from 'react';
@@ -13,6 +12,7 @@ import "swiper/css/navigation"
 import SwiperCore, {
     Autoplay, Pagination, Navigation
 } from 'swiper';
+import './homeRes.css'
 import './Home.css';    
 
 import Display from "./Display";
@@ -21,6 +21,8 @@ import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
 import Testimonial from './testimonial.js';
+import Earth from '../Earth/Earth';
+
 
 // import images for International Exams
 
@@ -89,11 +91,40 @@ class Home extends react.Component {
                         <div><button type="button" class="btn btn-info text-white" style={{ backgroundColor: '#13bfab', borderRadius: '10px', paddingTop: '16px', paddingRight: '30px', paddingBottom: '16px', paddingLeft: '30px', fontSize: '0.82352941176471rem' }}>Book a trial</button></div>
                     </div>
                     <div className='Home-container-1-sec-2'>
-                        <video controls Autoplay className='Home-container-1-sec-1-video'>
-                            <source src="/videos/TLN_Hello-in-different-languages.mp4" type="video/mp4" />
-                        </video>
+                    <Earth />
+                    </div>
+                    <div className="Home-container-10-overlay">
+                        <div className='overlay-box'>
+                            <h1><CountUp start={0} end={5000} separator=","
+                                suffix="+" duration={1}>
+                                {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start}>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                )}
+                            </CountUp></h1>
+                            <h2>Students</h2>
+                        </div>
+                        <div className='overlay-box'>
+                            <div className='stars'><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></div>
+                            <h2>5 Star Rating</h2>
+                        </div>
+                        <div className='overlay-box'>
+                            <h1><CountUp start={0} end={200} separator=","
+                                suffix="+" duration={1}>
+                                {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start}>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                )}
+                            </CountUp></h1>
+                            <h2>Expert Trainers</h2>
+                        </div>
+
                     </div>
                 </div>
+                
+                
                 <div className="smallscr">
                         <div className='overlay-box2'>
                             <h1><CountUp start={0} end={5000} separator=","
@@ -278,54 +309,7 @@ class Home extends react.Component {
                     <img src='/images/dots-circle.png' alt='img' className='dots-circle-2' />
                 </div>
 
-                <div className="Home-container-10">
-                    <div className='Home-container-10-Heading'>
-                        <h1>Speak with</h1>
-                        <h2>Confidence</h2>
-                    </div>
-
-                    <div className='Home-container-10-paras'>
-                        <p className='para'>
-                            Every language learner needs a great teacher to pave the way in mastering a foreign language.
-                        </p>
-                        <p className='para'>
-                            This is why “The Language Network” follows a didactic approach at its core. The result is a powerful curriculum with interactives sessions available at your fingertips — wherever you may be and whenever you want to learn.
-                        </p>
-                        <p className='para'>
-                            We truly understand that authenticity is key to fully exploring a foreign language.
-                        </p>
-                    </div>
-
-                    <div className="Home-container-10-overlay">
-                        <div className='overlay-box'>
-                            <h1><CountUp start={0} end={5000} separator=","
-                                suffix="+" duration={1}>
-                                {({ countUpRef, start }) => (
-                                    <VisibilitySensor onChange={start}>
-                                        <span ref={countUpRef} />
-                                    </VisibilitySensor>
-                                )}
-                            </CountUp></h1>
-                            <h2>Students</h2>
-                        </div>
-                        <div className='overlay-box'>
-                            <div className='stars'><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></div>
-                            <h2>5 Star Rating</h2>
-                        </div>
-                        <div className='overlay-box'>
-                            <h1><CountUp start={0} end={200} separator=","
-                                suffix="+" duration={1}>
-                                {({ countUpRef, start }) => (
-                                    <VisibilitySensor onChange={start}>
-                                        <span ref={countUpRef} />
-                                    </VisibilitySensor>
-                                )}
-                            </CountUp></h1>
-                            <h2>Expert Trainers</h2>
-                        </div>
-
-                    </div>
-                </div>
+                
 
                 <Curriculum id='curriculum' />
 
