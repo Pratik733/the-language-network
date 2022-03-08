@@ -9,13 +9,16 @@ export default function LearningPrices(props) {
     const LearningPrices = () => {
         switch (Opt) {
             case 1:
-                return <PricingTable english={props.price}/>;
+                //put prices for 1:1
+                return <PricingTable A1price={props.price} A1priceOG={900} A2price={700} A2priceOG={1200} B1price={1000} B1priceOG={1500} B2price={1700} B2priceOG={2000}/>;
                 break;
             case 2:
-                return <PricingTable monthly={599} />;
+                //put prices for 1:2
+                return <PricingTable A1price={500} A1priceOG={900} A2price={700} A2priceOG={1200} B1price={1000} B1priceOG={1500} B2price={1700} B2priceOG={2000} />;
                 break;  
             case 3:
-                return <PricingTable />;
+                //put prices for 1:4
+                return <PricingTable A1price={500} A1priceOG={900} A2price={700} A2priceOG={1200} B1price={1000} B1priceOG={1500} B2price={1700} B2priceOG={2000} />;
                 break;
             default:
                 break;

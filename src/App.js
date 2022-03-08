@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Curriculum from './components/curriculum/Curriculum';
-import KidsCourses from './components/KidsCourses/KidsCourses';
+import AdultsCourses from './components/AdultsCourses/AdultCourses';
 import IntroCourse from './components/Footer/LangForAdults/IntroCourse';
 import Earth from './components/Earth/Earth';
 import AdultsEnglish from './components/Footer/LangForAdults/English';
@@ -18,7 +18,8 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           {/* <Route exact path='/curriculum' element={<Curriculum />} /> */}
-          <Route exact path='/KidsCourses' element={<KidsCourses />} />
+          {/* <Route exact path='/KidsCourses' element={<KidsCourses />} /> */}
+          <Route exact path='/AdultsCourses' element={<AdultsCourses />} />
           <Route exact path='/IntoCourses' element={<IntroCourse />} />
           <Route exact path='/english-course-adults' element={<AdultsEnglish />} />
           <Route exact path='/Earth' element={<Earth />} />

@@ -25,7 +25,8 @@ class Earth extends Component {
       paddingBottom: 20,
       paddingTop: 20,
       paddingLeft: 20,
-      paddingRight: 20
+      paddingRight: 20,
+      hideCredits: true,
     }));
     
     

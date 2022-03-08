@@ -1,9 +1,9 @@
 import React from 'react';
-import './KidsCourses.css';
+import './Courses.css';
 import { useState } from 'react';
 import LearningPrices from './LearningPrices';
 
-export default function KidsCourses() {
+export default function AdultsCourses(props) {
     const English = {
         
     }
@@ -11,7 +11,7 @@ export default function KidsCourses() {
     const LanguageSec = () => {
         switch (language) {
             case 'English':
-                return (<LearningPrices price={499}/>)
+                return (<LearningPrices price={'499'}/>)
                 break;
             case 'French':
                 return (<LearningPrices />)
@@ -36,8 +36,6 @@ export default function KidsCourses() {
                 break;
         }
     }
-    
-
 
     return <div>
         <div className="Home-container-2 px-5 fadeIN" style={{ width: '100%' }}>

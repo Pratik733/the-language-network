@@ -1,5 +1,5 @@
 import React from 'react';
-import './KidsCourses';
+import './AdultCourses';
 
 export default function PricingTable(props) {
     return <div class="demo py-20 fadeIN">
@@ -9,7 +9,7 @@ export default function PricingTable(props) {
                 <div class="pricingTable">
                     <div class="pricingTable-header">
                         <i class="fa fa-adjust"></i>
-                        <div class="price-value flex flex-col"> ₹0000 <span className='text-[1.4rem] line-through'>₹0000</span> <span class="month">per month</span> </div>
+                        <div class="price-value flex flex-col"> ₹{props.A1price} <span className='text-[1.4rem] line-through'>₹{props.A1priceOG}</span> <span class="month">per month</span> </div>
                     </div>
                     <h3 class="heading">Batch A1</h3>
                     <div class="pricing-content">
@@ -31,7 +31,7 @@ export default function PricingTable(props) {
                 <div class="pricingTable green">
                     <div class="pricingTable-header">
                         <i class="fa fa-briefcase"></i>
-                        <div class="price-value flex flex-col"> ₹0000 <span className='text-[1.4rem] line-through'>₹0000</span> <span class="month">per month</span> </div>
+                        <div class="price-value flex flex-col"> ₹{props.A2price} <span className='text-[1.4rem] line-through'>₹{props.A2priceOG}</span> <span class="month">per month</span> </div>
                     </div>
                     <h3 class="heading">Batch A2</h3>
                     <div class="pricing-content">
@@ -52,7 +52,7 @@ export default function PricingTable(props) {
                 <div class="pricingTable blue">
                     <div class="pricingTable-header">
                         <i class="fa fa-diamond"></i>
-                        <div class="price-value flex flex-col"> ₹0000 <span className='text-[1.4rem] line-through'>₹0000</span> <span class="month">per month</span> </div>
+                        <div class="price-value flex flex-col"> ₹{props.B1price} <span className='text-[1.4rem] line-through'>₹{props.B1priceOG}</span> <span class="month">per month</span> </div>
                     </div>
                     <h3 class="heading">Batch B1</h3>
                     <div class="pricing-content">
@@ -73,7 +73,7 @@ export default function PricingTable(props) {
                 <div class="pricingTable red">
                     <div class="pricingTable-header">
                         <i class="fa fa-cube"></i>
-                        <div class="price-value flex flex-col"> ₹0000 <span className='text-[1.4rem] line-through'>₹0000</span> <span class="month">per month</span> </div>
+                        <div class="price-value flex flex-col"> ₹{props.B2price}<span className='text-[1.4rem] line-through'>₹{props.B2priceOG}</span> <span class="month">per month</span> </div>
                     </div>
                     <h3 class="heading">Batch B2</h3>
                     <div class="pricing-content">
